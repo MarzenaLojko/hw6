@@ -27,7 +27,7 @@
                     <nav>
                         <ul class="menu-list-nav">
                             <li class="menu-list-nav-li">
-                                <a class="aNav" href="">Agencja</a>
+                                <a class="aNav" href="index.html">Agencja</a>
                             </li>
                             <li class="menu-list-nav-li">
                                 <a class="aNav" href="portfolio.html">Portfolio</a>
@@ -124,22 +124,19 @@
                 <h3 class="we-do-h3">Czym się zajmujemy</h3>
                 <ul class="we-do-ul">
                     <li class="we-do-li">
-                        <img class="we-do-img" src="images/img.jpg " 
-                        alt="img1 " width="370 " height="294 " />
+                        <img class="we-do-img" src="images/img.jpg " alt="img1 " width="370 " height="294 " />
                         <div class="we-do-image-description">
                             <h4>Aplikacje Komputerowe</h4>
                         </div>
                     </li>
                     <li class="we-do-li">
-                        <img class="we-do-img" src="images/img2.jpg " 
-                        alt="img2 " width="370 " height="294 " />
+                        <img class="we-do-img" src="images/img2.jpg " alt="img2 " width="370 " height="294 " />
                         <div class="we-do-image-description">
                             <h4>Aplikacje Mobilne</h4>
                         </div>
                     </li>
                     <li class="we-do-li">
-                        <img class="we-do-img" src="images/img3.jpg " 
-                        alt="img3 " width="370 " height="294 " />
+                        <img class="we-do-img" src="images/img3.jpg " alt="img3 " width="370 " height="294 " />
                         <div class="we-do-image-description">
                             <h4>Rozwiązania Graficzne</h4>
                         </div>
@@ -381,6 +378,17 @@
                     </li>
                 </ul>
             </section>
+            <section class="footer-newsletter">
+                <h3 class="footer-h3-newsletter">Zapisz się do newslettera</h3>
+                <form name="newsletter-signup-form" class="footer-newsletter-signup-form" method="POST" autocomplete="on">
+                  <input class="footer-newsletter-signup-input" type="email" name="email" placeholder="E-Mail" />
+                  <button class="footer-newsletter-signup-btn" type="submit">
+                    Zapisz się<svg class="footer-newsletter-signup-btn-icon">
+                      <use href="images/icons.svg#icon-sent"></use>
+                    </svg>
+                  </button>
+                </form>
+              </section>
         </div>
     </footer>
 
@@ -391,6 +399,33 @@
                     <use href="images/icons.svg#button-close"></use>
                 </svg>
             </button>
+            <h3 class="modal-window-h3">Zostaw swoje dane w formularzu poniżej</h3>
+            <form class="modal-window-application-signup-form" name="application-signup-form" method="POST">
+                <label class="modal-window-application-signup-label" for="name">Imię</label>
+                <input class="modal-window-application-signup-input bg-image-name" type="text" name="name"
+                    id="name" />
+
+                <label class="modal-window-application-signup-label" for="PhoneNumber">Telefon</label>
+                <input class="modal-window-application-signup-input bg-image-phone" type="tel" name="phone_number"
+                    id="phone_number" />
+
+                <label class="modal-window-application-signup-label" for="Email">Email</label>
+                <input class="modal-window-application-signup-input bg-image-mail" type="email" name="email"
+                    id="email" />
+
+                <label class="modal-window-application-signup-label" for="Comment">Komentarz</label>
+                <textarea class="modal-window-application-signup-textarea" name="comment" id="comment"
+                    placeholder="Wprowadź tekst"></textarea>
+
+                <label class="modal-window-application-signup-terms-and-conditions" for="TermsAndContitions">
+                    <input class="modal-window-application-signup-terms-and-conditions-checkbox hidden" type="checkbox"
+                        name="privacy-policy-and-terms-and-conditions" value="agree" id="terms" />
+                    Oświadczam iż akceptuję&nbsp;<a href="#">Regulamin</a>&nbsp;i&nbsp;<a href="#">Politykę
+                        Prywatności.</a></label>
+                <button class="modal-window-application-signup-btn" type="submit">
+                    Wyślij
+                </button>
+            </form>
         </div>
     </div>
 
