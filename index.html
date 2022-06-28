@@ -403,15 +403,15 @@
             <form class="modal-window-application-signup-form" name="application-signup-form" method="POST">
                 <label class="modal-window-application-signup-label" for="name">Imię</label>
                 <input class="modal-window-application-signup-input bg-image-name" type="text" name="name"
-                    id="name" />
+                    id="name" required />
 
                 <label class="modal-window-application-signup-label" for="PhoneNumber">Telefon</label>
                 <input class="modal-window-application-signup-input bg-image-phone" type="tel" name="phone_number"
-                    id="phone_number" />
+                    id="phone_number" required />
 
                 <label class="modal-window-application-signup-label" for="Email">Email</label>
                 <input class="modal-window-application-signup-input bg-image-mail" type="email" name="email"
-                    id="email" />
+                    id="email" required />
 
                 <label class="modal-window-application-signup-label" for="Comment">Komentarz</label>
                 <textarea class="modal-window-application-signup-textarea" name="comment" id="comment"
@@ -419,7 +419,7 @@
 
                 <label class="modal-window-application-signup-terms-and-conditions" for="TermsAndContitions">
                     <input class="modal-window-application-signup-terms-and-conditions-checkbox hidden" type="checkbox"
-                        name="privacy-policy-and-terms-and-conditions" value="agree" id="terms" />
+                        name="privacy-policy-and-terms-and-conditions" value="agree" id="terms" required />
                     Oświadczam iż akceptuję&nbsp;<a href="#">Regulamin</a>&nbsp;i&nbsp;<a href="#">Politykę
                         Prywatności.</a></label>
                 <button class="modal-window-application-signup-btn" type="submit">
